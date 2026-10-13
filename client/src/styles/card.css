@@ -1,0 +1,34 @@
+.card{
+
+background:#111827;
+
+padding:25px;
+
+border-radius:16px;
+
+width:220px;
+
+border:1px solid #1E293B;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+
+.card p{
+
+color:#94A3B8;
+
+margin-bottom:10px;
+
+}
+
+
+.card h2{
+
+font-size:28px;
+
+color:#F8FAFC;
+
+}
