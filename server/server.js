@@ -12,7 +12,7 @@ import stockRoutes from "./routes/stockRoutes.js";
 import portfolioRoutes from "./routes/portfolioRoutes.js";
 import marketRoutes from "./routes/marketRoutes.js";
 import transactionRoutes from "./routes/transactionRoutes.js";
-import watchlistRoutes from "./routes/WatchlistRoutes.js";
+import watchlistRoutes from "./routes/watchlistRoutes.js";
 import aiRoutes from "./routes/aiRoutes.js";
 import chatbotRoutes from "./routes/chatbotRoutes.js";
 import userRoutes from "./routes/userroutes.js";
