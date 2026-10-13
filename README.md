@@ -1,70 +1,140 @@
 # TradeSphere
 
-TradeSphere is a full-stack investment portfolio and market analysis platform built with React, Node.js, Express, MongoDB, Supabase, and AI.
+### Investment Portfolio & Market Analysis Platform
 
-It allows users to securely manage their investment portfolio, explore market data, track stocks, visualize performance, maintain a watchlist, and interact with an AI-powered investment assistant.
+TradeSphere is a full-stack web application for managing simulated investment portfolios, exploring stock market data, tracking watchlists, visualizing performance, and interacting with an AI-powered investment assistant.
+
+Built with **React, Node.js, Express, MongoDB, Supabase, Yahoo Finance, and Groq AI**.
+
+---
 
 ## Features
 
-- Secure user authentication with Supabase
-- Email verification
-- Login and logout
-- Forgot and reset password
-- Personal investment portfolio
-- Buy and sell stock simulation
-- Transaction history
-- Portfolio value and P&L tracking
-- Live stock market data
-- Stock search
-- Historical market data
-- Line and candlestick charts
-- Personal watchlist
-- AI-powered portfolio insights
-- AI investment assistant
-- User-specific AI chat history
-- Portfolio notifications
+- Secure authentication with Supabase
+- Portfolio tracking and P&L monitoring
+- Simulated stock buy and sell transactions
+- Historical stock charts and market data
+- Personal stock watchlist
+- AI-powered portfolio insights and assistant
 - Financial news
-- Responsive fintech-style interface
+- Portfolio notifications
+- User-specific portfolio and AI data
+
+---
 
 ## Tech Stack
 
-### Frontend
+| Layer | Technology |
+|---|---|
+| Frontend | React, Vite, JavaScript, CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas, Mongoose |
+| Authentication | Supabase Auth |
+| Market Data | Yahoo Finance |
+| AI | Groq API |
+| Development | Git, GitHub, VS Code |
 
-- React
-- Vite
-- React Router
-- JavaScript
-- CSS
+---
 
-### Backend
+## Architecture
 
-- Node.js
-- Express.js
-- REST APIs
+```text
+React + Vite
+     │
+     ▼
+Supabase Authentication
+     │
+     ▼
+Express REST API
+     │
+ ┌───┴───────────────┐
+ ▼                   ▼
+MongoDB Atlas    External Services
+                 ├── Yahoo Finance
+                 └── Groq AI
+```
 
-### Database
+The backend follows a modular structure separating routes, controllers, services, middleware, and database models.
 
-- MongoDB Atlas
-- Mongoose
-
-### Authentication
-
-- Supabase Auth
-
-### Market Data
-
-- Yahoo Finance
-
-### AI
-
-- Groq API
+---
 
 ## Project Structure
 
 ```text
 TradeSphere/
-├── client/
-│   └── React + Vite frontend
-│
-└── server/
-    └── Node.js + Express backend
+├── client/          # React + Vite frontend
+├── server/          # Node.js + Express backend
+├── docs/            # Project documentation
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- MongoDB Atlas
+- Supabase project
+- Groq API key
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Kecia152/TradeSphere-final.git
+cd TradeSphere-final
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Backend
+
+Open another terminal:
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+The frontend runs on `http://localhost:5173` and the backend on `http://localhost:8000`.
+
+---
+
+## Environment Variables
+
+Create the required `.env` files locally for:
+
+- Supabase configuration
+- MongoDB connection
+- Groq API key
+- Backend API configuration
+
+Environment files and secrets are excluded from version control.
+
+---
+
+## Security
+
+- Supabase manages authentication and user sessions.
+- Protected API routes validate authenticated users.
+- User-specific portfolio, transaction, watchlist, and AI data is isolated.
+- Sensitive API keys and database credentials remain server-side.
+- Environment files are excluded from Git.
+
+---
+
+## Disclaimer
+
+TradeSphere is an educational software engineering project.
+
+It simulates investment activity and does **not** execute real stock trades, provide brokerage services, or constitute financial advice.
