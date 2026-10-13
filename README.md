@@ -2,23 +2,27 @@
 
 ### Investment Portfolio & Market Analysis Platform
 
-TradeSphere is a full-stack web application for managing simulated investment portfolios, exploring stock market data, tracking watchlists, visualizing performance, and interacting with an AI-powered investment assistant.
+TradeSphere is a full-stack investment platform I built to bring portfolio tracking, market exploration, stock simulation, and AI-assisted analysis into a single web application.
 
-Built with **React, Node.js, Express, MongoDB, Supabase, Yahoo Finance, and Groq AI**.
+The project was developed to implement a complete application workflow — from **user authentication and user-specific data management to REST APIs, database operations, external market-data integration, interactive charts, and AI-powered features**.
+
+The application includes secure authentication with Supabase, portfolio and transaction management using MongoDB, live market data through Yahoo Finance, personalized watchlists, financial news, notifications, and an AI-powered portfolio assistant and insights system using Groq.
 
 ---
 
-## Features
+## Key Features
 
 - Secure authentication with Supabase
-- Portfolio tracking and P&L monitoring
+- Email verification, login, logout, and password reset
+- User-specific portfolio and transaction management
 - Simulated stock buy and sell transactions
-- Historical stock charts and market data
+- Portfolio value and profit/loss tracking
+- Live stock market data and stock search
+- Historical market data with line and candlestick charts
 - Personal stock watchlist
-- AI-powered portfolio insights and assistant
-- Financial news
-- Portfolio notifications
-- User-specific portfolio and AI data
+- AI-powered portfolio insights
+- AI investment assistant with user-specific chat history
+- Financial news and portfolio notifications
 
 ---
 
